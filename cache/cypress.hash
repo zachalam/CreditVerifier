@@ -1,0 +1,24 @@
+{
+  "17042617705014226041": {
+    "e2e": {
+      "command": "cypress run",
+      "options": {
+        "cwd": "apps/credit-verifier-frontend-e2e"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "cypress"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/dist/cypress/apps/credit-verifier-frontend-e2e/videos",
+        "{workspaceRoot}/dist/cypress/apps/credit-verifier-frontend-e2e/screenshots"
+      ]
+    }
+  }
+}
