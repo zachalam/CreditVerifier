@@ -1,0 +1,65 @@
+{
+  "6993671602918405226": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/credit-verifier-backend"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/credit-verifier-backend"
+      ]
+    }
+  },
+  "10928136673372426263": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/credit-verifier-backend-e2e"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/credit-verifier-backend-e2e"
+      ]
+    }
+  },
+  "830004908084542011": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/credit-verifier-frontend"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/credit-verifier-frontend"
+      ]
+    }
+  }
+}
