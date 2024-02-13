@@ -39,3 +39,9 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+# noir project
+proofs
+target
+Prover.toml
+Verifier.toml

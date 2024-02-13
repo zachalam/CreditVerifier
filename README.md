@@ -13,6 +13,11 @@ To start both frontend and backend run `npx nx run-many -t serve`. Frontend appl
 
 Happy coding!
 
+## Prerequisite
+
+- Install Noir
+    `curl -L https://raw.githubusercontent.com/noir-lang/noirup/main/install | bash`
+
 
 ## Running tasks
 
