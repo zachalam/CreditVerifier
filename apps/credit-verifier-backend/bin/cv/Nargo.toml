@@ -1,7 +1,0 @@
-[package]
-name = "credit_verifier_circuit"
-type = "bin"
-authors = ["Nikhil Agrawal", "Zach Alam"]
-compiler_version = ">=0.19.2"
-
-[dependencies]

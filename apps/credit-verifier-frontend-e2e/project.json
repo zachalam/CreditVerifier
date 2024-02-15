@@ -1,9 +1,0 @@
-{
-  "name": "credit-verifier-frontend-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "apps/credit-verifier-frontend-e2e/src",
-  "targets": {},
-  "implicitDependencies": ["credit-verifier-frontend"],
-  "tags": []
-}
