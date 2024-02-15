@@ -45,3 +45,4 @@ proofs
 target
 Prover.toml
 Verifier.toml
+tmp.txt
