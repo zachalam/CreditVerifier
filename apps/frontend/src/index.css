@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#eee;
 }
 
 code {
@@ -21,9 +22,20 @@ code {
 .proofData {
   padding: 10px;
   font-family: Arial;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size:0.6em;
 }
 
-.publicInput {
+.publicInputs {
+  font-size:0.6em;
   padding: 10px;
   font-family: Arial;
+}
+
+.container {
+  padding: 5em;
+  text-align: center;
+  background-color: white;
+  border-bottom:5px solid #ddd;
 }
