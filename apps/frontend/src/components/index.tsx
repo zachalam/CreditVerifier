@@ -142,8 +142,8 @@ function Component() {
 
   return (
     <div className="container">
-      <img src="logo.jpeg" style={{width:'100px'}} />
-      <h2>This circuit validates users credit for loan amount</h2>
+      <img src="logo.jpeg" style={{width:'125px', borderRadius: '6em'}} />
+      <h2>Pre-qualify for your home loan!</h2>
       {/* Generate Proof */}
       <div className="formInput">
         <label htmlFor="ethAddress">Ethereum Address </label>
@@ -152,28 +152,34 @@ function Component() {
 
       <div className="formInput">
         <label htmlFor="verifiedAmount">Verified Amount (secret input) </label>
-        <input name="verifiedAmount" min="0" type={'number'} value={addressBalance} disabled />
+        <input name="verifiedAmount" min="0" type={'number'} value={addressBalance} disabled /> USD
       </div>
       
       <div className="formInput">
         <label htmlFor="loanAmount">Loan Amount </label>
-        <input name="loanAmount" min="0" type={'number'} onChange={handleChange} value={input.loanAmount} />
+        <input name="loanAmount" min="0" type={'number'} onChange={handleChange} value={input.loanAmount} /> USD
       </div>
 
       <div className="formInput">
         <label htmlFor="downpaymentPercent">Downpayment percent </label>
-        <input name="downpaymentPercent" min="0" max="100"type={'number'} onChange={handleChange} value={input.downpaymentPercent} />
+        <input name="downpaymentPercent" min="0" max="100"type={'number'} onChange={handleChange} value={input.downpaymentPercent} /> %
       </div>
 
-      <button className="formButton" onClick={calculateProof}>Calculate proof</button>
+      <button className="formButton" onClick={calculateProof}>Generate Qualifying Document (ZKP)</button>
       <br /><br />      <br /><br />      <br />
       {/* Display proof */}
+      {viewableProof ? 
+      <div style={{border:'5px solid #aaa;'}}>
+        <h1> You are Pre-qualified!</h1>
+        <h3>Loan Amount: ${input.loanAmount} | Downpayment: {input.downpaymentPercent}%</h3>
+        Share this certificate with your real estate agent when submitting an offer on a house.
      <div className='proofData'>{viewableProof}</div><br /><br />
      <div className='publicInputs'>{proof?.publicInputs}</div>
+     </div> : <div>Fill out form to generate loan certificate.</div> }
 
       <br /><br />
      {/* Verify Proof */}
-      <button className="formButton" onClick={verifyProof}>Verify proof</button>
+      <button className="formButton" onClick={verifyProof}>Verify Qualifying Document (ZKP)</button>
     </div>
   );
 }

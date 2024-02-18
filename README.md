@@ -52,3 +52,5 @@ npm run start
 ```
 
 - Integrate with credit bureau to lookup your credit score and provide as secret input to ZKP.
+
+- Link ETH wallet (so that the form can be populated automatically).

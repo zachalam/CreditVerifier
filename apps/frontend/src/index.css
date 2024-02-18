@@ -8,10 +8,15 @@ body {
   background-color:#eee;
 }
 
+input { padding:1em; border-radius: 1em; }
+h3 { color: green; }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.formButton { padding:1em; border-radius: 1em; }
 
 .formInput {
   color: DodgerBlue;
